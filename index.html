@@ -1,36 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <div id="content-wrap">
-        <header>
-            <nav id="navbar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="community.html">Community</a></li>
-                    <li><a href="career.html">Career</a></li>
-                    <li><a href="about.html">About University</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main class="main-content">
-            <h1>Welcome to Our University Portal</h1>
-            <p>This is the main content of the Home Page.</p>
-            
-        </main>
+  <div id="content-wrap">
+    <header>
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="career.html">Career</a></li>
+          <li><a href="about.html">About University</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content">
+      <div class="home-container">
+        <div class="flex-container-column welcome-container">
+          <h1>Welcome to Our University Portal</h1>
+          <h2>This is the main content of the Home Page.</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+            quisquam reiciendis earum perferendis illo? Minus, accusantium
+            esse dolor assumenda est sint eius, eos saepe, voluptas
+            necessitatibus qui porro laudantium. Commodi? Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Iure repellat hic commodi
+            beatae temporibus sequi, delectus dolorum quasi inventore
+            voluptates nobis accusamus dolore? Harum consequatur atque fugiat
+            accusantium cupiditate ratione.
+          </p>
+        </div>
+        <div class="flex-container-column signin-container">
+          <h2>Sign In</h2>
+          <form class="signin-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required />
 
-    </div>
-    <footer>
-        <p>© 2024 University Portal</p>
-    </footer>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+
+            <button type="submit">Sign In</button>
+          </form>
+          <div class="signup-link">
+            <p>Don't have an account? <a href="#">Sign up</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-page-content">
+        <section id="discussions">
+          <h2>Discussions</h2>
+          <div class="discussion-container">
+            <div class="discussion-item">
+              <h3>Topic 1</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis libero eu
+                mauris blandit ultrices.</p>
+              <button>Read More</button>
+            </div>
+            <div class="discussion-item">
+              <h3>Topic 2</h3>
+              <p>Integer rutrum lacus nec eros finibus, non hendrerit justo consequat. Mauris gravida
+                semper velit, sit amet ullamcorper sapien efficitur quis.</p>
+              <button>Read More</button>
+            </div>
+            <button id="load-more-discussions">Load More Discussions</button>
+          </div>
+        </section>
+
+        <section id="voting">
+          <h2>Voting</h2>
+          <div class="voting-container">
+            <div class="voting-item">
+              <h3>Activity 1</h3>
+              <p>Option 1</p>
+              <p>Option 2</p>
+              <p>Option 3</p>
+              <button>Vote Now</button>
+            </div>
+            <div class="voting-item">
+              <h3>Activity 2</h3>
+              <p>Option A</p>
+              <p>Option B</p>
+              <p>Option C</p>
+              <button>Vote Now</button>
+            </div>
+          </div>
+
+        </section>
+      </div>
+    </main>
+  </div>
+  <footer>
+    <p>© 2024 University Portal</p>
+  </footer>
 </body>
 
 </html>

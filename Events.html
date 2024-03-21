@@ -1,40 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Events Page</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
     <div id="content-wrap">
-        <header>
+      <header>
+        <nav id="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="about.html">About University</a></li>
+          </ul>
+        </nav>
+      </header>
 
-            <nav id="navbar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="community.html">Community</a></li>
-                    <li><a href="career.html">Career</a></li>
-                    <li><a href="about.html">About University</a></li>
-                </ul>
-            </nav>
-        </header>
-
-
-
-        <main class="main-content">
-            <h1>Events at Our University</h1>
-            <p>This is the main content of the Events Page.</p>
-            
-        </main>
-
+      <main class="main-content">
+        <div class="calendar-container">
+          <h2 class="calendar-container__title">This week's schedule</h2>
+          <div class="calendar">
+            <div class="calendar__timeline">
+              <div class="calendar__spacer"></div>
+              <div class="calendar__time-marker">06:00</div>
+              <div class="calendar__time-marker">08:00</div>
+              <div class="calendar__time-marker">10:00</div>
+              <div class="calendar__time-marker">12:00</div>
+              <div class="calendar__time-marker">14:00</div>
+              <div class="calendar__time-marker">16:00</div>
+              <div class="calendar__time-marker">18:00</div>
+              <div class="calendar__time-marker">20:00</div>
+              <div class="calendar__time-marker">22:00</div>
+              <div class="calendar__time-marker">00:00</div>
+            </div>
+            <div class="calendar__days">
+              <div class="calendar__day">
+                <div class="calendar__date">
+                  <p class="calendar__date-num">9</p>
+                  <p class="calendar__date-day">Mon</p>
+                </div>
+                <div class="calendar__events">
+                  <div class="calendar__event start-14 end-18 event-color-4">
+                    <p class="calendar__event__title">
+                      Computer Graphics Online Lecture
+                    </p>
+                    <p class="calendar__event__time">14:00 - 17:00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="calendar__day">
+                <div class="calendar__date">
+                  <p class="calendar__date-num">10</p>
+                  <p class="calendar__date-day">Tues</p>
+                </div>
+                <div class="calendar__events"></div>
+              </div>
+              <div class="calendar__day">
+                <div class="calendar__date">
+                  <p class="calendar__date-num">11</p>
+                  <p class="calendar__date-day">Wed</p>
+                </div>
+                <div class="calendar__events"></div>
+              </div>
+              <div class="calendar__day">
+                <div class="calendar__date">
+                  <p class="calendar__date-num">12</p>
+                  <p class="calendar__date-day">Thurs</p>
+                </div>
+                <div class="calendar__events">
+                  <div class="calendar__event start-12 end-16 event-color-4">
+                    <p class="calendar__event__title">
+                      Parallel Programming Practice Hour
+                    </p>
+                    <p class="calendar__time">13:00 - 16:00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="calendar__day">
+                <div class="calendar__date">
+                  <p class="calendar__date-num">13</p>
+                  <p class="calendar__date-day">Fri</p>
+                </div>
+                <div class="calendar__events"></div>
+              </div>
+              <div class="calendar__day">
+                <div class="calendar__date">
+                  <p class="calendar__date-num">14</p>
+                  <p class="calendar__date-day">Sat</p>
+                </div>
+                <div class="calendar__events">
+                  <div class="calendar__event start-10 end-16 event-color-3">
+                    <p class="calendar__event__title">Webinar</p>
+                    <p class="calendar__time">10:00 - 16:00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="calendar__day">
+                <div class="calendar__date">
+                  <p class="calendar__date-num">15</p>
+                  <p class="calendar__date-day">Sun</p>
+                </div>
+                <div class="calendar__events">
+                  <div class="calendar__event start-24 end-24 event-color-2">
+                    <p class="calendar__event__title">Game Development HW2</p>
+                    <p class="calendar__time">23:59</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
     <footer>
-        <p>© 2024 University Portal</p>
+      <p>© 2024 University Portal</p>
     </footer>
-</body>
-
+  </body>
 </html>
