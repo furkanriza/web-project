@@ -25,7 +25,7 @@ body {
 
 main {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 3rem;
 }
 
 /* Navigation bar styles */
@@ -65,3 +65,118 @@ footer {
 }
 
 /* shared styles end */
+
+
+
+/* ************************************************* */
+/* about styles */
+
+.history-content {
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.history-paragraph{
+    text-align: center;
+    margin-top: 2em;
+}
+
+#photo-gallery {
+    margin: 4em;
+}
+
+.gallery-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.gallery-slider img {
+    max-height: 40em;
+    margin: 0 auto; 
+    padding: 4em;
+}
+
+.slick-prev, .slick-next {
+    background-color: #474646;
+    color: #ffffff;
+    padding: 0.5em;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+/* about styles end */
+
+
+
+/* Career Page Styles */
+
+.job-opportunities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2em 2em 5em 2em;
+
+}
+
+.job {
+    width: calc(33.33% - 4em);
+    margin-right: 4em;
+    background-color: #ebebeb;
+    padding: 4em;
+}
+
+.job:last-child {
+    margin-right: 0;
+}
+
+.job p {
+    padding: 1em;
+
+    margin-top: 1em;
+}
+
+.job a {
+    display: inline-block;
+    padding: 1em 2em;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 1em;
+}
+
+.job a:hover {
+    background-color: #0056b3;
+}
+
+.entrepreneurs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.entrepreneur {
+    width: calc(20% - 4em);
+    margin-right: 4em;
+    background-color: #f9f9f9;
+    padding: 3em 1em 1em 1em;
+    margin-bottom: 5em;
+}
+
+.entrepreneur p {
+    padding: 1em;
+}
+
+.entrepreneur img {
+    max-width: 10em;
+    margin-top: 1em;
+}
+
+.entrepreneur:last-child {
+    margin-right: 0;
+}
+
+/* Career Page Styles end */

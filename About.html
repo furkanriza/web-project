@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Page</title>
+    <title>About University Page</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </head>
-
 <body>
     <div id="content-wrap">
         <header>
@@ -17,19 +18,42 @@
                     <li><a href="events.html">Events</a></li>
                     <li><a href="community.html">Community</a></li>
                     <li><a href="career.html">Career</a></li>
-                    <li><a href="about.html">About University</a></li>
+                    <li class="active"><a href="about.html">About University</a></li>
                 </ul>
             </nav>
         </header>
         <main class="main-content">
-            <h1>About</h1>
-            <p>This is the main content of the About Page.</p>
-            
+            <section id="university-history">
+                <h2>Our History</h2>
+                <div class="history-content">
+                    <p class="history-paragraph">Lorem ipsum dolor sit amet. Eum galisum consequatur et perspiciatis quisquam et quaerat velit ea animi laborum aut distinctio magni sit iure aspernatur ut illum tempora. Qui sapiente pariatur et consequatur unde non galisum voluptatem. Ex placeat ratione sit eius voluptatem ab accusamus itaque. Et neque dolores in molestiae voluptatem et nemo omnis non earum consequatur aut voluptas harum et possimus numquam eum vero velit! Aut voluptas dolore est distinctio omnis 33 ipsum aliquid ea dolorem neque qui sunt deserunt ab consequatur esse! Aut quidem consequatur aut quaerat nemo est officia consequatur. Sed quae officiis et provident ratione ab quis sint ut reiciendis consequatur vel vero rerum qui ipsa vero ex minus vitae? Est quibusdam quam non eius nostrum At quia eaque. Aut atque ipsa hic recusandae galisum qui doloribus ullam 33 repellat voluptatem eos quisquam repellendus! Qui unde dolores qui quaerat sunt est consequatur totam sed corporis deleniti. </p>
+                </div>  </section>
+            <section id="photo-gallery">
+                <h2>Photo Gallery</h2>
+                <div class="gallery-slider">
+                    <div class="photo-gallery-img"><img src="./public/image1.jpg" alt="Event 1"></div>
+                    <div class="photo-gallery-img"><img src="./public/image2.png" alt="Event 2"></div>
+                    <div class="photo-gallery-img"><img src="./public/image3.png" alt="Event 3"></div>
+                </div>
+                
+                <!-- since any script file is required for this sprint this code is embedded here -->
+                <script>
+                    $(document).ready(function(){
+                        $('.gallery-slider').slick({
+                            dots: false,
+                            infinite: true,
+                            speed: 300,
+                            slidesToShow: 1,
+                            adaptiveHeight: true
+                        });
+                    });
+                </script>
+            </section>
         </main>
     </div>
     <footer>
         <p>© 2024 University Portal</p>
     </footer>
+    <script src="scripts.js"></script>
 </body>
-
 </html>
