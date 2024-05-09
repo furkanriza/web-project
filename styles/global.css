@@ -29,6 +29,10 @@ body {
   flex: 1;
 }
 
+textarea {
+  resize: none;
+}
+
 #content-wrap {
   display: flex;
   flex-direction: column;
@@ -65,6 +69,11 @@ main {
   background-color: #ddd;
   color: black;
 }
+
+/* .active { */
+/*   background-color: #ddd; */
+/*   color: black; */
+/* } */
 
 footer {
   background-color: #333;
@@ -449,7 +458,6 @@ footer {
 }
 
 /* home page styles */
-
 
 .main-page-content {
   width: 70%;

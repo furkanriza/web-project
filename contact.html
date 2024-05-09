@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/contact.css" />
+  <link rel="stylesheet" type="text/css" href="scripts/jquery-ui-1.13.3/jquery-ui.css" />
+  <script type="text/javascript" src="scripts/jquery-ui-1.13.3/external/jquery/jquery.js"></script>
+  <script type="text/javascript" src="scripts/jquery-ui-1.13.3/jquery-ui.js"></script>
+  <script type="text/javascript" src="scripts/contact.js"></script>
+</head>
+
+<body>
+  <div id="content-wrap">
+    <header>
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="career.html">Career</a></li>
+          <li><a href="about.html">About University</a></li>
+          <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content">
+      <form class="contact-form" action="#" method="post">
+        <h1>Contact Us</h1>
+        <p>
+          All fields must be filled. Empty input spaces will be highlighted.
+        </p>
+        <table class="contact-form__table">
+          <tr class="contact-form__table__tr">
+            <th>Name</th>
+            <td>
+              <input id="name" type="text" name="name" placeholder="John" required />
+            </td>
+          </tr>
+          <tr>
+            <th>Surname</th>
+            <td>
+              <input id="surname" type="text" name="surname" placeholder="Doe" required />
+            </td>
+          </tr>
+          <tr>
+            <th>Date of Birth</th>
+            <td>
+              <input id="birthday" type="date" name="birthday" required />
+            </td>
+          </tr>
+          <tr>
+            <th>Email Address</th>
+            <td>
+              <input type="email" name="phone" placeholder="Enter a valid e-mail adress" pattern="https?://.+"
+                required />
+            </td>
+          </tr>
+          <tr>
+            <th>Phone Number</th>
+            <td>
+              <input type="tel" id="phone" name="phone" placeholder="+90" required />
+            </td>
+          </tr>
+          <tr>
+            <th>Message</th>
+            <td>
+              <textarea rows="8" cols="35" required></textarea>
+            </td>
+          </tr>
+        </table>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </div>
+  <footer>
+    <p>© 2024 University Portal</p>
+  </footer>
+</body>
+
+</html>

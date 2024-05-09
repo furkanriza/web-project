@@ -9,7 +9,6 @@
   <link rel="stylesheet" type="text/css" href="scripts/jquery-ui-1.13.3/jquery-ui.css" />
   <script type="text/javascript" src="scripts/jquery-ui-1.13.3/external/jquery/jquery.js"></script>
   <script type="text/javascript" src="scripts/jquery-ui-1.13.3/jquery-ui.js"></script>
-  <script type="text/javascript" src="scripts/script.js"></script>
 </head>
 
 <body>
@@ -19,9 +18,10 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="events.html">Events</a></li>
-          <li><a href="community.html">Community</a></li>
+          <li><a href="community.html" class="active">Community</a></li>
           <li><a href="career.html">Career</a></li>
           <li><a href="about.html">About University</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
     </header>
@@ -35,7 +35,7 @@
         </button>
         <div class="community__container">
           <div class="community__container__left flex-container-column">
-            <img src="public/alan-turing.jpg" class="staff-photo" />
+            <img src="public/alan-turing.jpg" class="staff-photo"/>
             <span>Alan Turing</span>
             <span>Jun 23, 1912</span>
           </div>
@@ -47,7 +47,7 @@
               <label for="topic">Topic:</label>
               <input name="topic" type="text" wrap="hard" class="community__container__right__input-topic" />
               <label for="message">Message:</label>
-              <input name="message" type="text" wrap="hard" class="community__container__right__input-message" />
+              <textarea class="community__container__right__input-message" rows="13" cols="100" required></textarea>
               <input type="submit" class="community__container__right__submit" value="Submit" />
             </form>
           </div>
