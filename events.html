@@ -5,11 +5,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Events Page</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/magnific-popup.css" />
+  <link rel="stylesheet" href="styles/events.css" />
   <link rel="stylesheet" type="text/css" href="scripts/jquery-ui-1.13.3/jquery-ui.css" />
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
   <script type="text/javascript" src="scripts/jquery-ui-1.13.3/external/jquery/jquery.js"></script>
   <script type="text/javascript" src="scripts/jquery-ui-1.13.3/jquery-ui.js"></script>
-  <script type="text/javascript" src="scripts/script.js"></script>
+  <script type="text/javascript" src="scripts/jquery.magnific-popup.js"></script>
+  <script type="text/javascript" src="scripts/jquery.magnific-popup.min.js"></script>
+  <script type="text/javascript" src="scripts/events.js"></script>
 </head>
 
 <body>
@@ -51,9 +56,9 @@
               </div>
               <div class="calendar__events">
                 <div class="calendar__event start-14 end-18 event-color-4">
-                  <p class="calendar__event__title">
+                  <a class="calendar__event__title popup-with-zoom-anim" href="#dialog1">
                     Computer Graphics Online Lecture
-                  </p>
+                  </a>
                   <p class="calendar__event__time">14:00 - 17:00</p>
                 </div>
               </div>
@@ -79,9 +84,9 @@
               </div>
               <div class="calendar__events">
                 <div class="calendar__event start-12 end-16 event-color-4">
-                  <p class="calendar__event__title">
+                  <a class="calendar__event__title popup-with-zoom-anim" href="#dialog2">
                     Parallel Programming Practice Hour
-                  </p>
+                  </a>
                   <p class="calendar__time">13:00 - 16:00</p>
                 </div>
               </div>
@@ -100,7 +105,9 @@
               </div>
               <div class="calendar__events">
                 <div class="calendar__event start-10 end-16 event-color-3">
-                  <p class="calendar__event__title">Webinar</p>
+                  <a class="calendar__event__title popup-with-zoom-anim" href="#dialog3">
+                    Webinar
+                  </a>
                   <p class="calendar__time">10:00 - 16:00</p>
                 </div>
               </div>
@@ -112,7 +119,9 @@
               </div>
               <div class="calendar__events">
                 <div class="calendar__event start-24 end-24 event-color-2">
-                  <p class="calendar__event__title">Game Development HW2</p>
+                  <a class="calendar__event__title popup-with-zoom-anim" href="#dialog4">
+                    Game Development HW2
+                  </a>
                   <p class="calendar__time">23:59</p>
                 </div>
               </div>
@@ -126,5 +135,33 @@
     <p>© 2024 University Portal</p>
   </footer>
 </body>
+
+<div id="dialog1" class="zoom-anim-dialog mfp-hide small-dialog">
+  <h1>Computer Graphics Online Lecture</h1>
+  <p>
+    Zoom link: <a href="https://zoom.us/j/1234567890">https://zoom.us/j/1234567890</a>
+  </p>
+</div>
+
+<div id="dialog2" class="zoom-anim-dialog mfp-hide small-dialog">
+  <h1>Parallel Programming Practice Hour</h1>
+  <p>
+      Teacher's Note: Please make sure to have your laptops ready with the necessary software installed.
+  </p>
+</div>
+
+<div id="dialog3" class="zoom-anim-dialog mfp-hide small-dialog">
+  <h1>Webinar</h1>
+  <p>
+      All attandees are required to register before the event.
+  </p>
+</div>
+
+<div id="dialog4" class="zoom-anim-dialog mfp-hide small-dialog">
+  <h1>Game Development HW2</h1>
+  <p>
+      Submissions past deadline will have a 10% deduction per day.
+  </p>
+</div>
 
 </html>
