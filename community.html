@@ -6,9 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Community Page</title>
   <link rel="stylesheet" href="styles/global.css" />
-  <link rel="stylesheet" type="text/css" href="scripts/jquery-ui-1.13.3/jquery-ui.css" />
+  <link rel="stylesheet" href="styles/community.css" />
+  <link rel="stylesheet" href="styles/chosen.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="scripts/jquery-ui-1.13.3/jquery-ui.css" /> -->
   <script type="text/javascript" src="scripts/jquery-ui-1.13.3/external/jquery/jquery.js"></script>
-  <script type="text/javascript" src="scripts/jquery-ui-1.13.3/jquery-ui.js"></script>
+  <!-- <script type="text/javascript" src="scripts/jquery-ui-1.13.3/jquery-ui.js"></script> -->
+  <script type="text/javascript" src="scripts/chosen.jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/community.js" defer></script>
 </head>
 
 <body>
@@ -27,24 +31,32 @@
     </header>
     <main class="main-content">
       <div class="community flex-container-column">
-        <button class="community__go-back-button">
-          <div class="community__go-back-button__container">
-            <img src="public/left-arrow.svg" class="community__go-back-button__container__icon" />
-            <p>Go back to staff list</p>
-          </div>
-        </button>
         <div class="community__container">
           <div class="community__container__left flex-container-column">
-            <img src="public/alan-turing.jpg" class="staff-photo"/>
-            <span>Alan Turing</span>
-            <span>Jun 23, 1912</span>
+            <img src="public/alan-turing.jpg" class="staff-photo" id="professorImage" />
+            <span id="professorName">Alan Turing</span>
+            <span id="professorDOB">Jun 23, 1912</span>
+            <h3>Select a professor</h3>
+            <select class="chzn-select" id="professorSelect" name="professor" style="width: 200px">
+              <option value="a">Alan Turing</option>
+              <option value="b">Dennis Ritchie</option>
+              <option value="c">Ken Thompson</option>
+              <option value="d">Richard Stallman</option>
+            </select>
+            <h3>Select topics</h3>
+            <select class="chzn-select" multiple="true" name="topics" style="width: 200px">
+              <option value="a">Lecture</option>
+              <option value="b">Homework</option>
+              <option value="c">Grade</option>
+              <option value="d">Other</option>
+            </select>
           </div>
           <div class="community__container__right">
             <h2 class="community__container__right__heading">
               Send a message
             </h2>
             <form class="community__container__right__form">
-              <label for="topic">Topic:</label>
+              <label for="topic">Subject:</label>
               <input name="topic" type="text" wrap="hard" class="community__container__right__input-topic" />
               <label for="message">Message:</label>
               <textarea class="community__container__right__input-message" rows="13" cols="100" required></textarea>
