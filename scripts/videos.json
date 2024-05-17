@@ -1,0 +1,14 @@
+{
+    "departments": [
+        {
+            "name": "Bilgisayar Mühendisliği",
+            "description": "Bilgisayar ve yazılım mühendisliği alanında eğitim ve araştırma.",
+            "videoId": "XeA55bbvrRU?si=QPxxIvUkX81iJSMo"
+        },
+        {
+            "name": "Elektrik-Elektronik Mühendisliği",
+            "description": "Elektrik ve elektronik sistemlerin tasarımı ve geliştirilmesi.",
+            "videoId": "tVj0ZTS4WF4"
+        }
+    ]
+}
