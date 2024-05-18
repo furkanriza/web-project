@@ -13,6 +13,43 @@
   margin: 4em;
 }
 
+/* for intro videos */
+.department {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+}
+#buttons-container {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.watchbtn {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #474646;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+.watchbtn:hover {
+  background-color: #007bff;
+}
+
+.watchbtn:focus {
+  outline: none;
+}
+
+
+/* for intro videos end */
 .gallery-slider {
   display: flex;
   justify-content: center;
@@ -34,4 +71,3 @@
   border-radius: 1em;
   cursor: pointer;
 }
-

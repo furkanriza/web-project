@@ -1,0 +1,34 @@
+[
+    {
+        "name": "John Doe",
+        "img": "./public/entrepreneur-female1.jpg",
+        "alt": "John Doe",
+        "company": "Founder, XYZ Inc.",
+        "year": "2010",
+        "bio": "John Doe is a visionary entrepreneur who founded XYZ Inc., a company specializing in innovative tech solutions. With a background in computer science, John has led his team to develop cutting-edge software that revolutionizes the industry. His leadership and dedication have earned XYZ Inc. multiple awards and recognitions."
+    },
+    {
+        "name": "Jane Smith",
+        "img": "./public/entrepreneur-female2.jpg",
+        "alt": "Jane Smith",
+        "company": "Founder, ABC Solutions",
+        "year": "2012",
+        "bio": "Jane Smith is the founder of ABC Solutions, a consulting firm that helps businesses optimize their operations through advanced analytics. With a degree in business administration, Jane has a knack for identifying growth opportunities and streamlining processes. Her strategic insights have helped numerous companies achieve their goals."
+    },
+    {
+        "name": "Michael Johnson",
+        "img": "./public/entrepreneur-male1.jpg",
+        "alt": "Michael Johnson",
+        "company": "Founder, Tech Innovations",
+        "year": "2008",
+        "bio": "Michael Johnson is the innovative mind behind Tech Innovations, a company dedicated to creating groundbreaking technology products. An electrical engineering graduate, Michael has a passion for inventing devices that make everyday life easier. His commitment to excellence has propelled Tech Innovations to the forefront of the tech industry."
+    },
+    {
+        "name": "Sara Williams",
+        "img": "./public/entrepreneur-male2.jpg",
+        "alt": "Sara Williams",
+        "company": "Founder, BioTech Solutions",
+        "year": "2015",
+        "bio": "Sara Williams is the founder of BioTech Solutions, a biotech company that focuses on developing sustainable solutions for the healthcare sector. With a background in biotechnology, Sara's research and innovations have led to significant advancements in medical treatments and therapies. Her work is making a lasting impact on global health."
+    }
+]
