@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function getEntrepreneurs() {
         var xhr = new XMLHttpRequest();
         xhr.open('GET', 'https://api.github.com/repos/furkanriza/web-project-main/contents/entrepreneurs.json', true);
-        xhr.setRequestHeader('Authorization', 'token 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');
+        xhr.setRequestHeader('Authorization', 'token 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');
         xhr.overrideMimeType('application/json');
         xhr.onload = function() {
             if (xhr.status === 200) {
