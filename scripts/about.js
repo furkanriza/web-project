@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
 	$(".gallery-slider").slick({
 		dots: false,
 		infinite: true,
@@ -6,45 +6,32 @@ $(document).ready(function () {
 		slidesToShow: 1,
 		adaptiveHeight: true,
 	});
+
+	getDepartments();
 });
 
 var departments = [];
 
 function getDepartments() {
-	var xhr = new XMLHttpRequest();
-	xhr.open('GET', 'https://api.github.com/repos/furkanriza/web-project-main/contents/videos.json');
-	xhr.setRequestHeader('Authorization', 'token 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');
-	xhr.overrideMimeType("application/json; charset=utf-8");
-	xhr.onload = function () {
-		if (xhr.status === 200) {
-			var response = JSON.parse(xhr.responseText);
-			var data = JSON.parse(atob(response.content));
-			var output = '';
-			var buttonsContainer = document.getElementById('video-buttons');
-			data.departments.forEach(department => {
-				var { name, description, videoId } = department;
-				output += '<div class="department"';
-				output += `<p>${name}</p>`;
-				output += `<button class="watchbtn" onclick="loadVideo('${videoId}')">Tanıtım Videosunu İzle</button>`;
-				output += '</div>';
-				departments.push({ name, description, videoId });
-			});
-			var buttonsContainer = document.getElementById('buttons-container');
-			buttonsContainer.innerHTML = output;
-		} else {
-			console.error('Error fetching departments:', xhr.statusText);
-		}
-	};
-	xhr.send();
+	$.getJSON("./json_files/videos.json", function(data) {
+		var output = "";
+		data.departments.forEach((department) => {
+			var { name, description, videoId } = department;
+			output += '<div class="department">';
+			output += `<p>${name}</p>`;
+			output += `<button class="watchbtn" onclick="loadVideo('${videoId}')">Watch Promotional Video</button>`;
+			output += "</div>";
+			departments.push({ name, description, videoId });
+		});
+		var buttonsContainer = document.getElementById("buttons-container");
+		buttonsContainer.innerHTML = output;
+	}).fail(function(jqxhr, textStatus, error) {
+		console.error("Error fetching departments:", textStatus, error);
+	});
 }
 
 function loadVideo(videoId) {
-	var embedId = departments.find(dep => dep.videoId === videoId).videoId;
-	var videoContainer = document.getElementById('video-container');
-	setTimeout(100);
-	videoContainer.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${embedId}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+	var embedId = departments.find((dep) => dep.videoId === videoId).videoId;
+	var videoContainer = document.getElementById("video-container");
+	videoContainer.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${embedId}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
 }
-
-document.addEventListener('DOMContentLoaded', function () {
-	getDepartments();
-});

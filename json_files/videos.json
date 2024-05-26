@@ -1,0 +1,24 @@
+{
+    "departments": [
+        {
+            "name": "Philosophy Department",
+            "description": "Yıldırım Beyazıt Üniversitesi - İnsan ve Toplum Bilimleri Fakültesi",
+            "videoId": "_4wce0IojuA"
+        },
+        {
+            "name": "Computer Engineering Department",
+            "description": "Bilgisayar ve yazılım mühendisliği alanında eğitim ve araştırma.",
+            "videoId": "QdzoFRQ8i58"
+        },
+        {
+            "name": "Law Department",
+            "description": "Ankara Yıldırım Beyazıt Üniversitesi Hukuk Fakültesi Genel Tanıtımı",
+            "videoId": "E0AlQ_Pip6w"
+        },
+        {
+            "name": "History Department",
+            "description": "Yıldırım Beyazıt Üniversitesi - İnsan ve Toplum Bilimleri Fakültesi",
+            "videoId": "LV3FM_WkulQ"
+        }
+    ]
+}

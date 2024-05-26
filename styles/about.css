@@ -60,7 +60,7 @@
 .gallery-slider img {
   max-height: 40em;
   margin: 0 auto;
-  padding: 4em;
+  padding: 1rem;
 }
 
 .slick-prev,
